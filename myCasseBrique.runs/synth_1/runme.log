@@ -1,0 +1,650 @@
+
+*** Running vivado
+    with args -log game_gen.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_gen.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source game_gen.tcl -notrace
+Command: synth_design -top game_gen -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8732 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 363.141 ; gain = 100.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'game_gen' [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/new/game_gen.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'playacc' [C:/Users/USER/Desktop/jeux/jeux.srcs/sources_1/new/test.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'ADXL362Ctrl' [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 1000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:283]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:312]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:365]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'SPI_If' declared at 'C:/Users/USER/Desktop/Etudiants/SPI_If.vhd:42' bound to instance 'SPI_Interface' of component 'SPI_If' [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'SPI_If' [C:/Users/USER/Desktop/Etudiants/SPI_If.vhd:66]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/USER/Desktop/Etudiants/SPI_If.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'SPI_If' (1#1) [C:/Users/USER/Desktop/Etudiants/SPI_If.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ADXL362Ctrl' (2#1) [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'playacc' (3#1) [C:/Users/USER/Desktop/jeux/jeux.srcs/sources_1/new/test.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv' [C:/Users/USER/Desktop/Etudiants/ClkDiv.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (4#1) [C:/Users/USER/Desktop/Etudiants/ClkDiv.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv_5Hz' [C:/Users/USER/Desktop/Etudiants/ClkDiv_5Hz.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv_5Hz' (5#1) [C:/Users/USER/Desktop/Etudiants/ClkDiv_5Hz.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/USER/Desktop/Etudiants/vga.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (6#1) [C:/Users/USER/Desktop/Etudiants/vga.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'objects' [C:/Users/USER/Desktop/Etudiants/objects.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'decor' [C:/Users/USER/Desktop/Etudiants/decor.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'decor' (7#1) [C:/Users/USER/Desktop/Etudiants/decor.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'pad' [C:/Users/USER/Desktop/Etudiants/pad.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'pad' (8#1) [C:/Users/USER/Desktop/Etudiants/pad.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'bounce' [C:/Users/USER/Desktop/Etudiants/bounce.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'bounce' (9#1) [C:/Users/USER/Desktop/Etudiants/bounce.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'monostable' [C:/Users/USER/Desktop/Etudiants/monostable.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'monostable' (10#1) [C:/Users/USER/Desktop/Etudiants/monostable.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ball' [C:/Users/USER/Desktop/Etudiants/ball.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ball' (11#1) [C:/Users/USER/Desktop/Etudiants/ball.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'brick_ctrl' [C:/Users/USER/Desktop/Etudiants/brick.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'brick_ctrl' (12#1) [C:/Users/USER/Desktop/Etudiants/brick.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'objects' (13#1) [C:/Users/USER/Desktop/Etudiants/objects.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'game' [C:/Users/USER/Desktop/Etudiants/game.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/USER/Desktop/Etudiants/display.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'display' (14#1) [C:/Users/USER/Desktop/Etudiants/display.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'mode' [C:/Users/USER/Desktop/Etudiants/mode.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'mode' (15#1) [C:/Users/USER/Desktop/Etudiants/mode.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'game' (16#1) [C:/Users/USER/Desktop/Etudiants/game.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'game_gen' (17#1) [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/new/game_gen.vhd:30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 426.809 ; gain = 164.406
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 426.809 ; gain = 164.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 426.809 ; gain = 164.406
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/constrs_1/new/pn.xdc]
+Finished Parsing XDC File [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/constrs_1/new/pn.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/constrs_1/new/pn.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/game_gen_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/game_gen_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 754.707 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 754.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 754.707 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 754.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 754.707 ; gain = 492.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 754.707 ; gain = 492.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 754.707 ; gain = 492.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If'
+INFO: [Synth 8-5546] ROM "SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "StN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_SendRec_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_Trans_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Adxl_Ctrl_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-5546] ROM "Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "StN_Spi_Trans" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "StN_Spi_Trans" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Data[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Data[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg[1]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cnt_Bytes_Sent" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'EP_reg' in module 'monostable'
+INFO: [Synth 8-5544] ROM "impulse" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "impulse" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "EF" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                               00 |                         10100000
+               stprepare |                               01 |                         00001001
+                 stshift |                               10 |                         01011011
+                  stdone |                               11 |                         00001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_reg' using encoding 'sequential' in module 'SPI_If'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        stspisendrecidle |                              000 |                          0000000
+         stspipreparecmd |                              001 |                          1000001
+         stspisendstartw |                              010 |                          0001011
+        stspiwaitondonew |                              011 |                          0000111
+         stspisendstartr |                              100 |                          0001110
+        stspiwaitondoner |                              101 |                          0100100
+        stspisendrecdone |                              110 |                          0010101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_SendRec_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          stspitransidle |                              000 |                       0000000000
+     stspiprepandsendcmd |                              001 |                       1111100001
+       stspiwaitondonesr |                              010 |                       0000110011
+     stspiwaitforssinact |                              011 |                       0000000010
+          stspitransdone |                              100 |                       0000001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_Trans_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          stadxlctrlidle |                             0000 |                     100100000000
+      stadxlsendresetcmd |                             0001 |                     011001000001
+     stadxlwaitresetdone |                             0010 |                     010000000011
+    stadxlconf_remaining |                             0011 |                     011001000010
+stadxlwaitsampleratetick |                             0100 |                     000100000110
+       stadxlread_status |                             0101 |                     011001000111
+         stadxlread_data |                             0110 |                     011000000101
+      stadxlformatandsum |                             0111 |                     000010101101
+         stadxlread_done |                             1000 |                     000001011111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+WARNING: [Synth 8-327] inferring latch for variable 'impulse_reg' [C:/Users/USER/Desktop/Etudiants/monostable.vhd:28]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_EF_reg' [C:/Users/USER/Desktop/Etudiants/monostable.vhd:20]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_EF_reg' [C:/Users/USER/Desktop/Etudiants/monostable.vhd:20]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   etat0 |                              001 |                               00
+                   etat1 |                              010 |                               01
+                   etat2 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'EP_reg' using encoding 'one-hot' in module 'monostable'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_EF_reg' [C:/Users/USER/Desktop/Etudiants/monostable.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 754.707 ; gain = 492.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 12    
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 7     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 14    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 7     
+	   2 Input      9 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 2     
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 11    
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 45    
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+	  22 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	  20 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SPI_If 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module ADXL362Ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 21    
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module ClkDiv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module ClkDiv_5Hz 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module VGA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module decor 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module pad 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module bounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+	  19 Input      1 Bit        Muxes := 1     
+	  22 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+Module monostable 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+Module ball 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	  20 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module mode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'acc/Cmd_Reg_Data_Addr_reg[1:0]' into 'acc/Cmd_Reg_Data_Addr_reg[1:0]' [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:451]
+INFO: [Synth 8-5544] ROM "acc/Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "acc/Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "acc/SPI_Interface/SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "acc/Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "acc/Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'acc/acc/Cmd_Reg_reg[0][0]' (FDRE) to 'acc/acc/Cmd_Reg_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'acc/acc/Cmd_Reg_reg[0][3]' (FDRE) to 'acc/acc/Cmd_Reg_reg[0][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\acc/acc/Cmd_Reg_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\acc/acc/Cmd_Reg_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Objects/p_0_out_inferred /\Objects/pad_ctrl/xpad_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (Objects/monostable_inst/impulse_reg) is unused and will be removed from module game_gen.
+WARNING: [Synth 8-3332] Sequential element (Objects/monostable_inst/FSM_onehot_EP_reg[2]) is unused and will be removed from module game_gen.
+WARNING: [Synth 8-3332] Sequential element (Objects/monostable_inst/FSM_onehot_EP_reg[1]) is unused and will be removed from module game_gen.
+WARNING: [Synth 8-3332] Sequential element (Objects/monostable_inst/FSM_onehot_EP_reg[0]) is unused and will be removed from module game_gen.
+WARNING: [Synth 8-3332] Sequential element (Objects/monostable_inst/FSM_onehot_EF_reg[2]) is unused and will be removed from module game_gen.
+WARNING: [Synth 8-3332] Sequential element (Objects/monostable_inst/FSM_onehot_EF_reg[1]) is unused and will be removed from module game_gen.
+WARNING: [Synth 8-3332] Sequential element (Objects/monostable_inst/FSM_onehot_EF_reg[0]) is unused and will be removed from module game_gen.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 754.707 ; gain = 492.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 754.707 ; gain = 492.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 754.707 ; gain = 492.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 777.996 ; gain = 515.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 777.996 ; gain = 515.594
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 777.996 ; gain = 515.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 777.996 ; gain = 515.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 777.996 ; gain = 515.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 777.996 ; gain = 515.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 777.996 ; gain = 515.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|game_gen    | acc/acc/Data_Reg_reg[4][7] | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|game_gen    | acc/acc/Data_Reg_reg[4][6] | 5      | 6     | NO           | NO                 | YES               | 6      | 0       | 
++------------+----------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    53|
+|3     |LUT1   |    16|
+|4     |LUT2   |   110|
+|5     |LUT3   |    50|
+|6     |LUT4   |   117|
+|7     |LUT5   |    63|
+|8     |LUT6   |   133|
+|9     |SRL16E |     8|
+|10    |FDCE   |   101|
+|11    |FDPE   |    19|
+|12    |FDRE   |   146|
+|13    |FDSE   |     4|
+|14    |IBUF   |     6|
+|15    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+------------+------+
+|      |Instance            |Module      |Cells |
++------+--------------------+------------+------+
+|1     |top                 |            |   845|
+|2     |  Game              |game        |    43|
+|3     |    mode_ctrl       |mode        |    43|
+|4     |  Objects           |objects     |   208|
+|5     |    ball_ctrl       |ball        |   122|
+|6     |    bounce_ctrl     |bounce      |    29|
+|7     |    pad_ctrl        |pad         |    57|
+|8     |  acc               |playacc     |   328|
+|9     |    acc             |ADXL362Ctrl |   328|
+|10    |      SPI_Interface |SPI_If      |    78|
+|11    |  getclk25          |ClkDiv      |     4|
+|12    |  getclk5           |ClkDiv_5Hz  |    47|
+|13    |  vga               |VGA         |   190|
++------+--------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 777.996 ; gain = 515.594
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 777.996 ; gain = 187.695
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 777.996 ; gain = 515.594
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 777.996 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+102 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 777.996 ; gain = 528.676
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 777.996 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.runs/synth_1/game_gen.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file game_gen_utilization_synth.rpt -pb game_gen_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 14:14:07 2019...

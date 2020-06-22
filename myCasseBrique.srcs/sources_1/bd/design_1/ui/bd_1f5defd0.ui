@@ -1,0 +1,11 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace inst game_gen_0 -pg 1 -lvl 1 -y 280 -defaultsOSRD
+preplace inst playacc_0 -pg 1 -lvl 2 -y 300 -defaultsOSRD
+levelinfo -pg 1 -540 -160 230 600 -top -210 -bot 640
+"
+}
+0

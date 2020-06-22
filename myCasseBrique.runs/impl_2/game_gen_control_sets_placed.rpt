@@ -1,0 +1,107 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri May 10 14:00:56 2019
+| Host         : DESKTOP-5M3N59B running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file game_gen_control_sets_placed.rpt
+| Design       : game_gen
+| Device       : xa7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    34 |
+| Unused register locations in slices containing registers |   152 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            8 |
+|      2 |            1 |
+|      4 |            5 |
+|      5 |            1 |
+|      6 |            3 |
+|      7 |            1 |
+|      8 |            3 |
+|      9 |            1 |
+|     10 |            3 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              62 |           24 |
+| No           | No                    | Yes                    |              69 |           32 |
+| No           | Yes                   | No                     |              42 |           17 |
+| Yes          | No                    | No                     |              42 |           10 |
+| Yes          | No                    | Yes                    |              55 |           23 |
+| Yes          | Yes                   | No                     |              50 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+-------------------------------------------------------------+------------------------------------+------------------+----------------+
+|                 Clock Signal                 |                        Enable Signal                        |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------------------------------------+-------------------------------------------------------------+------------------------------------+------------------+----------------+
+|  an7_reg/G0                                  |                                                             |                                    |                1 |              1 |
+|  an6_reg/G0                                  |                                                             |                                    |                1 |              1 |
+|  ca_reg/G0                                   |                                                             |                                    |                1 |              1 |
+|  cf_reg/G0                                   |                                                             |                                    |                1 |              1 |
+|  cg_reg/G0                                   |                                                             |                                    |                1 |              1 |
+|  ce_reg/G0                                   |                                                             |                                    |                1 |              1 |
+|  cd_reg/G0                                   |                                                             |                                    |                1 |              1 |
+| ~Objects/monostable_inst/impulse             |                                                             | sw0_BUFG                           |                1 |              1 |
+|  an6_reg_i_2_n_0                             |                                                             | cb_reg_i_2_n_0                     |                2 |              2 |
+|  Objects/monostable_inst/impulse_reg_i_1_n_0 |                                                             |                                    |                1 |              4 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/FSM_sequential_StC_Adxl_Ctrl[3]_i_1_n_0             | Objects/bounce_ctrl/RESET          |                1 |              4 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/Cnt_Num_Reads[3]_i_2_n_0                            | acc/acc/Reset_Cnt_Num_Reads        |                1 |              4 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/Cmd_Reg[0]_1                                        | acc/acc/Cmd_Reg[0][6]_i_1_n_0      |                1 |              4 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/StC_Adxl_Ctrl[3]                                    | Objects/bounce_ctrl/RESET          |                1 |              4 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/Cmd_Reg[1][6]_i_2_n_0                               | acc/acc/Cmd_Reg[1]0_in[7]          |                1 |              5 |
+|  SYSCLK_IBUF_BUFG                            |                                                             | acc/acc/SPI_Interface/SCLK_2X_DIV0 |                2 |              6 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/Cmd_Reg[2]_0                                        | acc/acc/Cmd_Reg[2]_2[7]            |                1 |              6 |
+|  clk25_BUFG                                  | vga/ycord_reg[2]_1[0]                                       | Objects/bounce_ctrl/RESET          |                3 |              6 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/D_Send[6]_i_1_n_0                                   | Objects/bounce_ctrl/RESET          |                1 |              7 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/SPI_Interface/EN_LOAD_DOUT                          |                                    |                1 |              8 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/SPI_Interface/MOSI_REG[7]_i_1_n_0                   |                                    |                3 |              8 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/SPI_Interface/SHIFT_TICK_IN                         |                                    |                1 |              8 |
+|  getclk5/clk5                                | Game/mode_ctrl/pause_reg_0[0]                               | Objects/bounce_ctrl/RESET          |                3 |              9 |
+|  SYSCLK_IBUF_BUFG                            |                                                             | acc/acc/Cnt_SS_Inactive[9]_i_1_n_0 |                3 |             10 |
+|  clk25_BUFG                                  | vga/sel                                                     | Objects/bounce_ctrl/RESET          |                5 |             10 |
+|  clk25_BUFG                                  | Game/mode_ctrl/lock[9]_i_1_n_0                              | Objects/bounce_ctrl/RESET          |                3 |             10 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/Cnt_Num_Reads[3]_i_2_n_0                            | acc/acc/ACCEL_X_SUM0               |                4 |             16 |
+|  SYSCLK_IBUF_BUFG                            |                                                             | acc/acc/Reset_Sample_Rate_Div      |                6 |             17 |
+|  SYSCLK_IBUF_BUFG                            |                                                             |                                    |                7 |             19 |
+|  clk25_BUFG                                  | Game/mode_ctrl/E[0]                                         | Objects/bounce_ctrl/RESET          |                9 |             20 |
+|  SYSCLK_IBUF_BUFG                            | acc/acc/SPI_Interface/FSM_sequential_StC_Spi_SendRec_reg[1] |                                    |                5 |             26 |
+|  sw0_BUFG                                    |                                                             |                                    |                9 |             32 |
+|  SYSCLK_IBUF_BUFG                            |                                                             | Objects/bounce_ctrl/RESET          |               11 |             33 |
+|  clk25_BUFG                                  |                                                             | Objects/bounce_ctrl/RESET          |               24 |             42 |
++----------------------------------------------+-------------------------------------------------------------+------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_2" LaunchPart="xa7a100tcsg324-1I" LaunchTime="1557489511">
+  <File Type="PA-TCL" Name="game_gen.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="game_gen_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="game_gen_reports.tcl"/>
+  <File Type="RDS-RDS" Name="game_gen.vds"/>
+  <File Type="RDS-UTIL" Name="game_gen_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="game_gen_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="game_gen.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="game_gen_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="game_gen_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/ADXL362Ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/ADXL362Ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1551452591"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/ClkDiv.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/ClkDiv.vhd"/>
+        <Attr Name="ImportTime" Val="1551452520"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/ClkDiv_5Hz.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/ClkDiv_5Hz.vhd"/>
+        <Attr Name="ImportTime" Val="1555680264"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/SPI_If.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/SPI_If.vhd"/>
+        <Attr Name="ImportTime" Val="1551452596"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/ball.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/ball.vhd"/>
+        <Attr Name="ImportTime" Val="1551452558"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/pong_package.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/pong_package.vhd"/>
+        <Attr Name="ImportTime" Val="1552401176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/bounce.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/bounce.vhd"/>
+        <Attr Name="ImportTime" Val="1551452551"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/brick.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/brick.vhd"/>
+        <Attr Name="ImportTime" Val="1551452563"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/decor.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/decor.vhd"/>
+        <Attr Name="ImportTime" Val="1551452540"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/display.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/display.vhd"/>
+        <Attr Name="ImportTime" Val="1551452572"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/mode.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/mode.vhd"/>
+        <Attr Name="ImportTime" Val="1551452579"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/game.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/game.vhd"/>
+        <Attr Name="ImportTime" Val="1554480154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/jeux/jeux.srcs/sources_1/new/test.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../jeux/jeux.srcs/sources_1/new/test.vhd"/>
+        <Attr Name="ImportTime" Val="1554477962"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/vga.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/vga.vhd"/>
+        <Attr Name="ImportTime" Val="1554480133"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/pad.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/pad.vhd"/>
+        <Attr Name="ImportTime" Val="1551452545"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/monostable.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/monostable.vhd"/>
+        <Attr Name="ImportTime" Val="1552400937"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/Etudiants/objects.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Etudiants/objects.vhd"/>
+        <Attr Name="ImportTime" Val="1551452534"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/game_gen.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="game_gen"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/pn.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

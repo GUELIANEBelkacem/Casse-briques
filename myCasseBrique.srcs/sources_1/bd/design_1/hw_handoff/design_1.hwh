@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat May  4 18:41:31 2019" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="xa7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1I"/>
+
+  <EXTERNALPORTS/>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/game_gen_0" HWVERSION="1.0" INSTANCE="game_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="game_gen" VLNV="xilinx.com:module_ref:game_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_game_gen_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="taille" SIGIS="undef"/>
+        <PORT DIR="I" NAME="speed" SIGIS="undef"/>
+        <PORT DIR="I" NAME="press" SIGIS="undef"/>
+        <PORT DIR="O" NAME="an0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="an1" SIGIS="undef"/>
+        <PORT DIR="O" NAME="an2" SIGIS="undef"/>
+        <PORT DIR="O" NAME="an3" SIGIS="undef"/>
+        <PORT DIR="O" NAME="an4" SIGIS="undef"/>
+        <PORT DIR="O" NAME="an5" SIGIS="undef"/>
+        <PORT DIR="O" NAME="an6" SIGIS="undef"/>
+        <PORT DIR="O" NAME="an7" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ca" SIGIS="undef"/>
+        <PORT DIR="O" NAME="cb" SIGIS="undef"/>
+        <PORT DIR="O" NAME="cc" SIGIS="undef"/>
+        <PORT DIR="O" NAME="cd" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ce" SIGIS="undef"/>
+        <PORT DIR="O" NAME="cf" SIGIS="undef"/>
+        <PORT DIR="O" NAME="cg" SIGIS="undef"/>
+        <PORT DIR="O" NAME="dp" SIGIS="undef"/>
+        <PORT DIR="I" NAME="SYSCLK" SIGIS="undef"/>
+        <PORT DIR="I" NAME="RESET" SIGIS="rst"/>
+        <PORT DIR="O" NAME="SCLK" SIGIS="undef"/>
+        <PORT DIR="O" NAME="MOSI" SIGIS="undef"/>
+        <PORT DIR="I" NAME="MISO" SIGIS="undef"/>
+        <PORT DIR="O" NAME="SS" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="red" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="green" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="blue" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Hsync" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Vsync" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="scr" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/playacc_0" HWVERSION="1.0" INSTANCE="playacc_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="playacc" VLNV="xilinx.com:module_ref:playacc:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_playacc_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="SYSCLK" SIGIS="undef"/>
+        <PORT DIR="I" NAME="RESET" SIGIS="rst"/>
+        <PORT DIR="O" NAME="SCLK" SIGIS="undef"/>
+        <PORT DIR="O" NAME="MOSI" SIGIS="undef"/>
+        <PORT DIR="I" NAME="MISO" SIGIS="undef"/>
+        <PORT DIR="O" NAME="SS" SIGIS="undef"/>
+        <PORT DIR="O" NAME="gauche" SIGIS="undef"/>
+        <PORT DIR="O" NAME="droite" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

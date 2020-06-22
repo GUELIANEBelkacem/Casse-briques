@@ -1,0 +1,23 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Etudiants/ADXL362Ctrl.vhd" \
+"../../../../../Etudiants/ClkDiv.vhd" \
+"../../../../../Etudiants/ClkDiv_5Hz.vhd" \
+"../../../../../Etudiants/SPI_If.vhd" \
+"../../../../../Etudiants/ball.vhd" \
+"../../../../../Etudiants/pong_package.vhd" \
+"../../../../../Etudiants/bounce.vhd" \
+"../../../../../Etudiants/brick.vhd" \
+"../../../../../Etudiants/decor.vhd" \
+"../../../../../Etudiants/display.vhd" \
+"../../../../../Etudiants/mode.vhd" \
+"../../../../../Etudiants/game.vhd" \
+"../../../../../jeux/jeux.srcs/sources_1/new/test.vhd" \
+"../../../../../Etudiants/vga.vhd" \
+"../../../../../Etudiants/pad.vhd" \
+"../../../../../Etudiants/monostable.vhd" \
+"../../../../../Etudiants/objects.vhd" \
+"../../../../myCasseBrique.srcs/sources_1/new/game_gen.vhd" \
+
+# Do not sort compile order
+nosort

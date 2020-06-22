@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 19 14:13:23 2019
+# Process ID: 14624
+# Current directory: C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.runs/synth_1
+# Command line: vivado.exe -log game_gen.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source game_gen.tcl
+# Log file: C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.runs/synth_1/game_gen.vds
+# Journal file: C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source game_gen.tcl -notrace

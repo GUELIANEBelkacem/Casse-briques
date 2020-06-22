@@ -1,0 +1,503 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May  4 02:03:40 2019
+# Process ID: 22392
+# Current directory: C:/Users/USER/Desktop/myCasseBrique
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21448 C:\Users\USER\Desktop\myCasseBrique\myCasseBrique.xpr
+# Log file: C:/Users/USER/Desktop/myCasseBrique/vivado.log
+# Journal file: C:/Users/USER/Desktop/myCasseBrique\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 673.762 ; gain = 85.652
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+Wrote  : <C:\Users\USER\Desktop\myCasseBrique\myCasseBrique.srcs\sources_1\bd\design_1\design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 728.234 ; gain = 24.945
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <C:\Users\USER\Desktop\myCasseBrique\myCasseBrique.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Exporting to file C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files -ipstatic_source_dir C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/modelsim} {questa=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/questa} {riviera=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/riviera} {activehdl=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd}
+create_bd_cell -type module -reference game_gen game_gen_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RESET' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+export_ip_user_files -of_objects  [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xa7a100tcsg324-1I
+Top: game_gen
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 908.012 ; gain = 71.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'game_gen' [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/new/game_gen.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'playacc' [C:/Users/USER/Desktop/jeux/jeux.srcs/sources_1/new/test.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'ADXL362Ctrl' [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 1000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:283]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:312]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:365]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'SPI_If' declared at 'C:/Users/USER/Desktop/Etudiants/SPI_If.vhd:42' bound to instance 'SPI_Interface' of component 'SPI_If' [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'SPI_If' [C:/Users/USER/Desktop/Etudiants/SPI_If.vhd:66]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [C:/Users/USER/Desktop/Etudiants/SPI_If.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'SPI_If' (1#1) [C:/Users/USER/Desktop/Etudiants/SPI_If.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ADXL362Ctrl' (2#1) [C:/Users/USER/Desktop/Etudiants/ADXL362Ctrl.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'playacc' (3#1) [C:/Users/USER/Desktop/jeux/jeux.srcs/sources_1/new/test.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv' [C:/Users/USER/Desktop/Etudiants/ClkDiv.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (4#1) [C:/Users/USER/Desktop/Etudiants/ClkDiv.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv_5Hz' [C:/Users/USER/Desktop/Etudiants/ClkDiv_5Hz.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv_5Hz' (5#1) [C:/Users/USER/Desktop/Etudiants/ClkDiv_5Hz.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'VGA' [C:/Users/USER/Desktop/Etudiants/vga.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'VGA' (6#1) [C:/Users/USER/Desktop/Etudiants/vga.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'objects' [C:/Users/USER/Desktop/Etudiants/objects.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'decor' [C:/Users/USER/Desktop/Etudiants/decor.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'decor' (7#1) [C:/Users/USER/Desktop/Etudiants/decor.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'pad' [C:/Users/USER/Desktop/Etudiants/pad.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'pad' (8#1) [C:/Users/USER/Desktop/Etudiants/pad.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'bounce' [C:/Users/USER/Desktop/Etudiants/bounce.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'bounce' (9#1) [C:/Users/USER/Desktop/Etudiants/bounce.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'monostable' [C:/Users/USER/Desktop/Etudiants/monostable.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'monostable' (10#1) [C:/Users/USER/Desktop/Etudiants/monostable.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'ball' [C:/Users/USER/Desktop/Etudiants/ball.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'ball' (11#1) [C:/Users/USER/Desktop/Etudiants/ball.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'brick_ctrl' [C:/Users/USER/Desktop/Etudiants/brick.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'brick_ctrl' (12#1) [C:/Users/USER/Desktop/Etudiants/brick.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'objects' (13#1) [C:/Users/USER/Desktop/Etudiants/objects.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'game' [C:/Users/USER/Desktop/Etudiants/game.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/USER/Desktop/Etudiants/display.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'display' (14#1) [C:/Users/USER/Desktop/Etudiants/display.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'mode' [C:/Users/USER/Desktop/Etudiants/mode.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'mode' (15#1) [C:/Users/USER/Desktop/Etudiants/mode.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'game' (16#1) [C:/Users/USER/Desktop/Etudiants/game.vhd:38]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/new/game_gen.vhd:287]
+WARNING: [Synth 8-3848] Net scr in module/entity game_gen does not have driver. [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/new/game_gen.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'game_gen' (17#1) [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/new/game_gen.vhd:32]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[15]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[14]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[13]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[12]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[11]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[10]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[9]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[8]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[7]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[6]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[5]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[4]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[3]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[2]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[1]
+WARNING: [Synth 8-3331] design game_gen has unconnected port scr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 968.918 ; gain = 132.313
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 968.918 ; gain = 132.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 968.918 ; gain = 132.313
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xa7a100tcsg324-1I
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 9 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/constrs_1/new/pn.xdc]
+Finished Parsing XDC File [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/constrs_1/new/pn.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1241.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1314.449 ; gain = 477.844
+44 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1314.449 ; gain = 477.844
+write_schematic C:/Users/USER/Desktop/schematic.png.sch
+C:/Users/USER/Desktop/schematic.png.sch
+write_schematic -format pdf -orientation portrait C:/Users/USER/Desktop/schematic.pdf
+C:/Users/USER/Desktop/schematic.pdf
+write_schematic -format pdf -orientation portrait -scope visible -force C:/Users/USER/Desktop/schematic.pdf
+WARNING: [Vivado 12-3279] write_schematic failed. 'C:/Users/USER/Desktop/schematic.pdf' already exists and does not have write permission.
+write_schematic -format pdf -orientation portrait C:/Users/USER/Desktop/schematic2.pdf
+C:/Users/USER/Desktop/schematic2.pdf
+create_bd_design "design_1"
+Wrote  : <C:\Users\USER\Desktop\myCasseBrique\myCasseBrique.srcs\sources_1\bd\design_1\design_1.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type module -reference game_gen game_gen_0
+create_bd_cell -type module -reference playacc playacc_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RESET' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference ADXL362Ctrl ADXL362Ctrl_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RESET' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference SPI_If SPI_If_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RESET' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference ClkDiv ClkDiv_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference ClkDiv_5Hz ClkDiv_5Hz_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RST' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'RST'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference VGA VGA_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference objects objects_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+ERROR: [IP_Flow 19-734] Port 'brick': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'brick_bounce': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'objects'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'objects'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference objects -name objects_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "New Clocking Wizard (100 MHz)" }  [get_bd_pins ClkDiv_5Hz_0/CLK]
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/reset'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /clk_wiz/clk_in1'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_100M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_clk_wiz_100M/ext_reset_in'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_HIGH}}  [get_bd_pins clk_wiz/reset]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl_0 -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl_0
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl_0 /clk_wiz/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl_0
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Clk {New External Port (100 MHz)} Manual_Source {Auto}}  [get_bd_pins clk_wiz/clk_in1]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_LOW}}  [get_bd_pins rst_clk_wiz_100M/ext_reset_in]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl_0_0 -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl_0_0
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl_0_0 /rst_clk_wiz_100M/ext_reset_in
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl_0_0
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_cells rst_clk_wiz_100M]
+make_bd_intf_pins_external  [get_bd_cells rst_clk_wiz_100M]
+INFO: [BD 5-409] No interface pins to be made external for /rst_clk_wiz_100M
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_cells SPI_If_0] [get_bd_cells playacc_0] [get_bd_cells ClkDiv_0] [get_bd_cells game_gen_0] [get_bd_cells ClkDiv_5Hz_0] [get_bd_cells VGA_0] [get_bd_cells ADXL362Ctrl_0]
+make_bd_intf_pins_external  [get_bd_cells SPI_If_0] [get_bd_cells playacc_0] [get_bd_cells ClkDiv_0] [get_bd_cells game_gen_0] [get_bd_cells ClkDiv_5Hz_0] [get_bd_cells VGA_0] [get_bd_cells ADXL362Ctrl_0]
+INFO: [BD 5-409] No interface pins to be made external for /SPI_If_0
+INFO: [BD 5-409] No interface pins to be made external for /playacc_0
+INFO: [BD 5-409] No interface pins to be made external for /ClkDiv_0
+INFO: [BD 5-409] No interface pins to be made external for /game_gen_0
+INFO: [BD 5-409] No interface pins to be made external for /ClkDiv_5Hz_0
+INFO: [BD 5-409] No interface pins to be made external for /VGA_0
+INFO: [BD 5-409] No interface pins to be made external for /ADXL362Ctrl_0
+endgroup
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /ClkDiv_5Hz_0/CLK have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_clk_out1 
+regenerate_bd_layout -routing
+open_bd_design {C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd}
+open_run synth_2 -name synth_2
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xa7a100tcsg324-1I
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/constrs_1/new/pn.xdc]
+Finished Parsing XDC File [C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/constrs_1/new/pn.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1411.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 63 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.292 . Memory (MB): peak = 2142.168 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.319 . Memory (MB): peak = 2142.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2142.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_bd_design {C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets reset_rtl_0_1] [get_bd_nets clk_100MHz_1] [get_bd_nets clk_wiz_locked] [get_bd_cells clk_wiz]
+delete_bd_objs [get_bd_nets reset_rtl_0_0_1] [get_bd_nets clk_wiz_clk_out1] [get_bd_nets rst_clk_wiz_100M_peripheral_aresetn] [get_bd_nets aux_reset_in_0_1] [get_bd_nets mb_debug_sys_rst_0_1] [get_bd_nets rst_clk_wiz_100M_mb_reset] [get_bd_nets rst_clk_wiz_100M_bus_struct_reset] [get_bd_nets rst_clk_wiz_100M_peripheral_reset] [get_bd_nets rst_clk_wiz_100M_interconnect_aresetn] [get_bd_cells rst_clk_wiz_100M]
+delete_bd_objs [get_bd_nets ADXL362Ctrl_0_ACCEL_Y] [get_bd_nets ADXL362Ctrl_0_ACCEL_Z] [get_bd_nets ADXL362Ctrl_0_MOSI] [get_bd_nets MISO_3_1] [get_bd_nets ADXL362Ctrl_0_SS] [get_bd_nets SYSCLK_3_1] [get_bd_nets RESET_5_1] [get_bd_nets ADXL362Ctrl_0_ACCEL_X] [get_bd_nets ADXL362Ctrl_0_ACCEL_TMP] [get_bd_nets ADXL362Ctrl_0_Data_Ready] [get_bd_nets ADXL362Ctrl_0_SCLK] [get_bd_cells ADXL362Ctrl_0]
+delete_bd_objs [get_bd_nets game_gen_0_an1] [get_bd_nets game_gen_0_an4] [get_bd_nets game_gen_0_ca] [get_bd_nets game_gen_0_cb] [get_bd_nets game_gen_0_cc] [get_bd_nets game_gen_0_cg] [get_bd_nets game_gen_0_dp] [get_bd_nets game_gen_0_an2] [get_bd_nets game_gen_0_an5] [get_bd_nets game_gen_0_an6] [get_bd_nets game_gen_0_ce] [get_bd_nets RESET_3_1] [get_bd_nets game_gen_0_MOSI] [get_bd_nets MISO_2_1] [get_bd_nets game_gen_0_Vsync] [get_bd_nets speed_0_1] [get_bd_nets game_gen_0_an0] [get_bd_nets game_gen_0_an7] [get_bd_nets game_gen_0_cd] [get_bd_nets game_gen_0_cf] [get_bd_nets game_gen_0_SS] [get_bd_nets game_gen_0_green] [get_bd_nets game_gen_0_Hsync] [get_bd_nets taille_0_1] [get_bd_nets press_0_1] [get_bd_nets game_gen_0_an3] [get_bd_nets SYSCLK_2_1] [get_bd_nets game_gen_0_SCLK] [get_bd_nets game_gen_0_red] [get_bd_nets game_gen_0_blue] [get_bd_nets game_gen_0_scr] [get_bd_cells game_gen_0]
+delete_bd_objs [get_bd_nets SYSCLK_1_1] [get_bd_nets RESET_1_1] [get_bd_nets playacc_0_SCLK] [get_bd_nets playacc_0_MOSI] [get_bd_nets MISO_1_1] [get_bd_nets playacc_0_SS] [get_bd_nets playacc_0_gauche] [get_bd_nets playacc_0_droite] [get_bd_cells playacc_0]
+delete_bd_objs [get_bd_nets SYSCLK_0_1] [get_bd_nets RESET_0_1] [get_bd_nets Din_0_1] [get_bd_nets SPI_If_0_Done] [get_bd_nets HOLD_SS_0_1] [get_bd_nets SPI_If_0_SCLK] [get_bd_nets MISO_0_1] [get_bd_nets SPI_If_0_Dout] [get_bd_nets Start_0_1] [get_bd_nets SPI_If_0_MOSI] [get_bd_nets SPI_If_0_SS] [get_bd_cells SPI_If_0]
+delete_bd_objs [get_bd_nets clk100_0_1] [get_bd_nets reset_2_1] [get_bd_nets ClkDiv_0_clk25] [get_bd_cells ClkDiv_0]
+delete_bd_objs [get_bd_nets Net] [get_bd_cells ClkDiv_5Hz_0]
+delete_bd_objs [get_bd_nets clk25_1_1] [get_bd_nets VGA_0_blue] [get_bd_nets VGA_0_visible] [get_bd_nets reset_4_1] [get_bd_nets VGA_0_endframe] [get_bd_nets b_0_1] [get_bd_nets VGA_0_vsync] [get_bd_nets VGA_0_xpos] [get_bd_nets VGA_0_ypos] [get_bd_nets r_0_1] [get_bd_nets g_0_1] [get_bd_nets VGA_0_red] [get_bd_nets VGA_0_green] [get_bd_nets VGA_0_hsync] [get_bd_cells VGA_0]
+export_ip_user_files -of_objects  [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+move_files -fileset sim_1 [get_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/new/game_gen.vhd]
+update_compile_order -fileset sources_1
+move_files [get_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/new/game_gen.vhd]
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+Wrote  : <C:\Users\USER\Desktop\myCasseBrique\myCasseBrique.srcs\sources_1\bd\design_1\design_1.bd> 
+update_compile_order -fileset sources_1
+set_property synth_checkpoint_mode None [get_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <C:\Users\USER\Desktop\myCasseBrique\myCasseBrique.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Exporting to file C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files -ipstatic_source_dir C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/modelsim} {questa=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/questa} {riviera=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/riviera} {activehdl=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd}
+set_property synth_checkpoint_mode Singular [get_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Exporting to file C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 4 design_1_synth_1
+[Sat May  4 18:30:37 2019] Launched design_1_synth_1...
+Run output will be captured here: C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.runs/design_1_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2772.066 ; gain = 0.168
+export_simulation -of_objects [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files -ipstatic_source_dir C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/modelsim} {questa=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/questa} {riviera=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/riviera} {activehdl=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset design_1] C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [Project 1-386] Moving file 'C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd' from fileset 'design_1' to fileset 'sources_1'.
+set_property synth_checkpoint_mode None [get_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Exporting to file C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files -ipstatic_source_dir C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/modelsim} {questa=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/questa} {riviera=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/riviera} {activehdl=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_bd_cell -type module -reference game_gen game_gen_0
+create_bd_cell -type module -reference playacc playacc_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'RESET' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+startgroup
+make_bd_pins_external  [get_bd_cells playacc_0]
+make_bd_intf_pins_external  [get_bd_cells playacc_0]
+INFO: [BD 5-409] No interface pins to be made external for /playacc_0
+endgroup
+set_property location {2 382 -46} [get_bd_cells playacc_0]
+set_property location {1 422 273} [get_bd_cells playacc_0]
+set_property location {1 412 262} [get_bd_cells game_gen_0]
+set_property location {0.5 -454 525} [get_bd_cells playacc_0]
+set_property location {1.5 211 342} [get_bd_cells playacc_0]
+connect_bd_net [get_bd_ports SYSCLK_0] [get_bd_pins game_gen_0/RESET]
+delete_bd_objs [get_bd_nets SYSCLK_0_1]
+delete_bd_objs [get_bd_nets RESET_0_1] [get_bd_ports RESET_0]
+delete_bd_objs [get_bd_nets MISO_0_1] [get_bd_ports MISO_0]
+delete_bd_objs [get_bd_ports SYSCLK_0]
+delete_bd_objs [get_bd_nets playacc_0_SS] [get_bd_ports SS_0]
+delete_bd_objs [get_bd_nets playacc_0_droite] [get_bd_ports droite_0]
+delete_bd_objs [get_bd_nets playacc_0_gauche] [get_bd_ports gauche_0]
+delete_bd_objs [get_bd_nets playacc_0_SCLK] [get_bd_ports SCLK_0]
+delete_bd_objs [get_bd_nets playacc_0_MOSI] [get_bd_ports MOSI_0]
+set_property location {0.5 -102 279} [get_bd_cells playacc_0]
+create_bd_cell -type module -reference objects objects_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+ERROR: [IP_Flow 19-734] Port 'brick': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'brick_bounce': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'objects'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'objects'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference objects -name objects_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+delete_bd_objs [get_bd_cells playacc_0]
+set_property location {1.5 61 227} [get_bd_cells game_gen_0]
+set_property location {0.5 -509 195} [get_bd_cells game_gen_0]
+regenerate_bd_layout
+create_bd_cell -type module -reference bounce bounce_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+ERROR: [IP_Flow 19-734] Port 'brick': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'brick_bounce': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'bounce'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'bounce'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference bounce -name bounce_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference game game_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+ERROR: [IP_Flow 19-734] Port 'brick': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'brick_bounce': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'game'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'game'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference game -name game_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference objects objects_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+ERROR: [IP_Flow 19-734] Port 'brick': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'brick_bounce': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'objects'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'objects'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference objects -name objects_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference display display_0
+ERROR: [IP_Flow 19-734] Port 'brick': Port type 'tableau' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-4668] Failed to infer definition from module 'display'.
+ERROR: [BD 41-1699] Unable to add reference type cell for reference-module 'display'
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference display -name display_0 .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+create_bd_cell -type module -reference playacc playacc_0
+set_property location {0.5 -407 269} [get_bd_cells playacc_0]
+connect_bd_net [get_bd_pins playacc_0/MISO] [get_bd_pins playacc_0/SCLK]
+delete_bd_objs [get_bd_nets playacc_0_SCLK]
+set_property location {1.5 125 270} [get_bd_cells playacc_0]
+set_property location {1.5 226 299} [get_bd_cells playacc_0]
+set_property location {0.5 -156 280} [get_bd_cells game_gen_0]
+set_property location {2 191 538} [get_bd_cells playacc_0]
+set_property location {2 224 301} [get_bd_cells playacc_0]
+regenerate_bd_layout -routing
+save_bd_design
+Wrote  : <C:\Users\USER\Desktop\myCasseBrique\myCasseBrique.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_2
+launch_runs synth_2 -jobs 4
+[Sat May  4 18:40:07 2019] Launched synth_2...
+Run output will be captured here: C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.runs/synth_2/runme.log
+open_bd_design {C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd}
+launch_runs impl_2 -jobs 4
+WARNING: [Project 1-478] Design 'synth_2' is stale and will not be used when launching 'impl_2'
+[Sat May  4 18:41:22 2019] Launched impl_2...
+Run output will be captured here: C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.runs/impl_2/runme.log
+generate_target all [get_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/game_gen_0/taille
+/game_gen_0/speed
+/game_gen_0/press
+/game_gen_0/SYSCLK
+/game_gen_0/RESET
+/game_gen_0/MISO
+/playacc_0/SYSCLK
+/playacc_0/RESET
+/playacc_0/MISO
+
+Wrote  : <C:\Users\USER\Desktop\myCasseBrique\myCasseBrique.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block game_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block playacc_0 .
+Exporting to file C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files -ipstatic_source_dir C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/modelsim} {questa=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/questa} {riviera=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/riviera} {activehdl=C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -fileset [get_filesets sources_1] -inst_template
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+[Sat May  4 18:43:01 2019] Launched impl_2...
+Run output will be captured here: C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.runs/impl_2/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/USER/Desktop/myCasseBrique/myCasseBrique.srcs/sources_1/bd/design_1/design_1.bd
+create_bd_design "design_1"
+Wrote  : <C:\Users\USER\Desktop\myCasseBrique\myCasseBrique.srcs\sources_1\bd\design_1\design_1.bd> 
+create_bd_cell -type module -reference game_gen game_gen_0
+update_compile_order -fileset sources_1
+write_bd_layout -format pdf -orientation portrait C:/Users/USER/Desktop/design_1.pdf
+C:/Users/USER/Desktop/design_1.pdf
